@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Exhibition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>🚗 Car Exhibition 2026</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cars</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Car Section -->
+   <section class="car-container">
+
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b" alt="Lamborghini">
+        <h2>Lamborghini</h2>
+        <button onclick="showDetails('Lamborghini is a luxury sports car known for speed and design.')">View Details</button>
+    </div>
+
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="BMW">
+        <h2>BMW</h2>
+        <button onclick="showDetails('BMW offers comfort, performance, and modern technology.')">View Details</button>
+    </div>
+
+    <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="Audi">
+        <h2>Audi</h2>
+        <button onclick="showDetails('Audi is known for luxury interiors and smooth driving.')">View Details</button>
+    </div>
+
+</section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="car-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
